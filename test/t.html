@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-1.10.2.js"></script>
+<script type="text/javascript" src="jquery.zclip.js"></script>
+
+
+</head>
+<body>
+
+    <textarea></textarea>	
+<input id="t" type="button" value="test">			
+
+
+<input type="text" value="www.baidu.com" id="link">
+<span id="copyBtn">复制链接</span>
+
+
+
+
+
+<script type="text/javascript">
+    $(function(){
+ $("#t").zclip({
+	path: "ZeroClipboard.swf",
+	copy: function(){
+		return "11111";
+		}
+	});
+$('#copyBtn').zclip({
+            path: "ZeroClipboard.swf",
+            copy: function(){
+                return $('#link').val();
+  　　　 　　}
+        });
+   
+    });
+	
+
+</script>
+
+</body>
+</html>

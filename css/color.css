@@ -1,0 +1,46 @@
+body{
+}
+.desc{
+    width:100px;
+    height :100px;
+    text-align:center;
+    font-size:14px;
+    margin:10px 10px;
+    padding:5px 5px;
+    border:1px solid green;
+    overflow:hidden
+}
+.mgj{
+/*蘑菇街登录页面结合图片做的一种可以取代刺眼的白色背景页面*/
+background-color:#f2f2f2;
+background-image:url(../images/bg-v3.png);
+}
+.hide{
+display:none;
+}
+.zz1{
+position:absolute;
+top:0;left:0;bottom:0;right:0;width:100%;height:1000px;z-index:9999;
+background:none repeat scroll 0 0 rgb(0,0,0);opacity:0.4;
+}
+.zz2{
+    position:fixed;top:0;right:0;width:100%;height:100%;z-index:9999;
+    background:none repeat scroll 0 0 rgb(0,0,0);opacity:0.4;
+}
+.center1{
+    top:50%;left:50%;width:400px;height:400px;margin-left:-200px;margin-top:-200px;position:absolute;
+    background-color:blue;
+}
+.center2{
+    top:50%;left:50%;width:400px;height:400px;margin-left:-200px;margin-top:-200px;position:absolute;
+    background-color:red;
+}
+.btn-green1{background-color:#7BC836;boder-color:#7BC836}
+.btn-black1{background-color:#424242;boder-color:#424242}
+.btn-blue1{background-color:#0B98E5;boder-color:#0B98E5}
+/*清除浮动*/
+.clearfix{
+font-size:0;display:block;content:'';clear:both;height:0;line-height:0;visibility:hidden;
+}
+.nav{height:38px;line-height:38px;}
+.nav li{list-style:none;display:inline-block;}

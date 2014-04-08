@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="css/color.css">
+        <title>some useful color or skill in css</title>
+    </head>
+    <body>
+        <div id="container" class="container">
+            <div class="row">
+                <button id="mgj" class="btn btn-info">使用蘑菇街登录页面背景代替白色刺眼背景</button>
+                <button id="zz1" class="btn btn-info">div全屏遮照方法1</button>
+                <button id="zz2" class="btn btn-info">div全屏遮照方法2</button>
+                <button id="center1" class="btn btn-info">div屏幕居中的两种方法1</button>
+                <button id="center2" class="btn btn-info">div屏幕居中的两种方法2</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-green1">绿色1</button>
+                <button class="btn btn-black1">黑色1</button>
+                <button class="btn btn-blue1">蓝色1</button>
+            </div>
+            <div class="row">
+                <ul class="nav">
+                    <li>首页</li>
+                    <li>关于我们</li>
+                    <li>网站建设</li>
+                    <li>网络推广</li>
+                    <li>客户案例</li>
+                    <li>域名主机</li>
+                    <li>服务支持</li>
+                </ul>
+            </div>
+        </div>
+        <div id="zz" class="hide"></div>
+        <div class="hide center"></div>
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(function(){
+            $('#mgj').click(function(){
+                $('body').addClass('mgj'); 
+            });
+            $('#zz1').click(function(){
+                $('#zz').addClass('zz1').removeClass('hide').show();
+            });
+
+            $('#zz2').click(function(){
+                $('#zz').addClass('zz2').removeClass('hide').show();
+            });
+            $('#center1').click(function(){
+                $('.center').addClass('center1').removeClass('hide').show();
+            });
+            $('#center2').click(function(){
+                $('.center').addClass('center2').removeClass('hide').show();
+            });
+        }); 
+    </script>
+</html>
